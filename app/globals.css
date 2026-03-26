@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 8%;
+  --primary: 258 88% 58%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 6% 35%;
+  --border: 240 8% 90%;
+  --radius: 0.8rem;
+}
+
+.dark {
+  --background: 240 30% 3%;
+  --foreground: 240 8% 95%;
+  --card: 240 22% 8%;
+  --card-foreground: 240 8% 95%;
+  --primary: 263 92% 66%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 240 16% 14%;
+  --muted-foreground: 240 5% 70%;
+  --border: 240 16% 18%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.glass {
+  @apply bg-card/80 backdrop-blur-lg border border-border;
+}
